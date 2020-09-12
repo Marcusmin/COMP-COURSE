@@ -1,0 +1,5 @@
+#bin/sh
+for f in ./*
+do
+	mv "$f" "$f.vc"
+done

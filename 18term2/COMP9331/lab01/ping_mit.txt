@@ -1,0 +1,8 @@
+PING e9566.dscb.akamaiedge.net (104.74.27.200) 56(84) bytes of data.
+64 bytes from a104-74-27-200.deploy.static.akamaitechnologies.com (104.74.27.200): icmp_req=1 ttl=56 time=1.25 ms
+64 bytes from a104-74-27-200.deploy.static.akamaitechnologies.com (104.74.27.200): icmp_req=2 ttl=56 time=1.41 ms
+64 bytes from a104-74-27-200.deploy.static.akamaitechnologies.com (104.74.27.200): icmp_req=3 ttl=56 time=1.41 ms
+
+--- e9566.dscb.akamaiedge.net ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 1.250/1.361/1.417/0.078 ms

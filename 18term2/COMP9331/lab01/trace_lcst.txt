@@ -1,0 +1,27 @@
+traceroute to www.lancaster.ac.uk (148.88.65.80), 30 hops max, 60 byte packets
+ 1  cserouter1-trusted.cse.unsw.EDU.AU (129.94.208.251)  0.203 ms  0.163 ms  0.137 ms
+ 2  129.94.39.17 (129.94.39.17)  1.044 ms  1.080 ms  1.042 ms
+ 3  ombudnex1-vl-3154.gw.unsw.edu.au (149.171.253.35)  1.699 ms libudnex1-vl-3154.gw.unsw.edu.au (149.171.253.34)  1.585 ms ombudnex1-vl-3154.gw.unsw.edu.au (149.171.253.35)  1.660 ms
+ 4  libcr1-po-5.gw.unsw.edu.au (149.171.255.165)  1.376 ms ombcr1-po-6.gw.unsw.edu.au (149.171.255.169)  8.432 ms libcr1-po-6.gw.unsw.edu.au (149.171.255.201)  1.342 ms
+ 5  unswbr1-te-1-9.gw.unsw.edu.au (149.171.255.101)  1.319 ms  1.296 ms unswbr1-te-2-13.gw.unsw.edu.au (149.171.255.105)  1.376 ms
+ 6  138.44.5.0 (138.44.5.0)  1.558 ms  1.443 ms  1.465 ms
+ 7  et-1-3-0.pe1.sxt.bkvl.nsw.aarnet.net.au (113.197.15.149)  2.235 ms  2.435 ms  2.358 ms
+ 8  et-0-0-0.pe1.a.hnl.aarnet.net.au (113.197.15.99)  95.242 ms  95.229 ms  95.206 ms
+ 9  et-2-1-0.bdr1.a.sea.aarnet.net.au (113.197.15.201)  146.684 ms  146.612 ms  146.482 ms
+10  abilene-1-lo-jmb-706.sttlwa.pacificwave.net (207.231.240.8)  146.637 ms  146.631 ms  146.607 ms
+11  et-4-0-0.4079.rtsw.miss2.net.internet2.edu (162.252.70.0)  157.565 ms  157.499 ms  157.515 ms
+12  et-4-0-0.4079.rtsw.minn.net.internet2.edu (162.252.70.58)  180.658 ms  180.513 ms  180.441 ms
+13  et-1-1-2.4079.rtsw.eqch.net.internet2.edu (162.252.70.106)  188.766 ms  188.558 ms  188.697 ms
+14  ae-1.4079.rtsw.clev.net.internet2.edu (162.252.70.130)  198.403 ms  197.426 ms  197.404 ms
+15  et-2-0-0.4079.rtsw.ashb.net.internet2.edu (162.252.70.54)  205.049 ms  204.981 ms  204.938 ms
+16  ae-2.4079.rtsw.wash.net.internet2.edu (162.252.70.136)  204.995 ms  205.424 ms  205.327 ms
+17  internet2-gw.mx1.lon.uk.geant.net (62.40.124.44)  280.049 ms  279.827 ms  279.538 ms
+18  janet-gw.mx1.lon.uk.geant.net (62.40.124.198)  279.979 ms  317.268 ms  279.857 ms
+19  ae29.londpg-sbr2.ja.net (146.97.33.2)  280.519 ms  280.360 ms  280.543 ms
+20  ae31.erdiss-sbr2.ja.net (146.97.33.22)  284.346 ms  284.207 ms  284.187 ms
+21  ae29.manckh-sbr2.ja.net (146.97.33.42)  285.982 ms  285.914 ms  285.996 ms
+22  ae24.lanclu-rbr1.ja.net (146.97.38.58)  288.412 ms  288.371 ms  288.339 ms
+23  * * *
+24  ismx-issrx.rtr.lancs.ac.uk (148.88.255.17)  312.359 ms  311.337 ms  301.652 ms
+25  dc.iss.srv.rtrcloud.lancs.ac.uk (148.88.253.3)  306.231 ms  302.320 ms  294.777 ms
+26  www.lancs.ac.uk (148.88.65.80)  290.183 ms !X  289.891 ms !X  289.870 ms !X

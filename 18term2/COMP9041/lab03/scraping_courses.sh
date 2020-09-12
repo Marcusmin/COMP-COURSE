@@ -1,0 +1,3 @@
+#!/bin/bash
+keyword=$1
+(wget -q -O- "http://www.handbook.unsw.edu.au/vbook2018/brCoursesByAtoZ.jsp?StudyLevel=Undergraduate&descr=${keyword:0:1}"|sed -n -e "/<TABLE[^>]*>/,/<\/TABLE>/p"|grep "$1"|sed "s/<TD[^>]*><A[^>]*>/ /g"|sed 's/<\/TD>//g'|sed 's/<\/A>/#/'|tr '\n' '$'|sed 's/[\t]*//g'|sed 's/<TD[^>]*>/%/g'|tr '#' '\n'|sed 's/%//g'|sed 's/$*//g' && wget -q -O- "http://www.handbook.unsw.edu.au/vbook2018/brCoursesByAtoZ.jsp?StudyLevel=Postgraduate&descr=${keyword:0:1}"|sed -n -e "/<TABLE[^>]*>/,/<\/TABLE>/p"|grep "$1"|sed "s/<TD[^>]*><A[^>]*>/ /g"|sed 's/<\/TD>//g'|sed 's/<\/A>/#/'|tr '\n' '$'|sed 's/[\t]*//g'|sed 's/<TD[^>]*>/%/g'|tr '#' '\n'|sed 's/%//g'|sed 's/$*//g')|sed "s/ $//"|sort|uniq

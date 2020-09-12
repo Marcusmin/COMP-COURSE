@@ -1,0 +1,5 @@
+Server:		129.94.208.2
+Address:	129.94.208.2#53
+
+1.0.0.127.in-addr.arpa	name = localhost.
+

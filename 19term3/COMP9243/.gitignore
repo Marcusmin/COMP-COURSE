@@ -1,0 +1,6 @@
+**/exercises/*.beam
+**/exercises/rstart
+**/ASS1/dsm
+**/ASS1/*.o
+**/ASS1/*.a
+**/ASS2/*.beam

@@ -1,0 +1,28 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.6</VERSION>
+ <DEVICE>"ATmega2560"</DEVICE>
+ <WORKING_DIR>D:\COMP_COURSE\COMP9032\lab0\lab0\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>D:/Atmel Studio 7\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc</DIR>
+  <DIR>D:\Atmel Studio 7\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\COMP_COURSE\COMP9032\lab0\lab0\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>D:/Atmel Studio 7\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc\m2560def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\COMP_COURSE\COMP9032\lab0\lab0\Debug\lab0.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>lab0.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>lab0.map</FILE>
+  <FILE>lab0.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <main><FILE>D:\COMP_COURSE\COMP9032\lab0\lab0\main.asm</FILE><LINE>17</LINE></main>
+  <halt><FILE>D:\COMP_COURSE\COMP9032\lab0\lab0\main.asm</FILE><LINE>29</LINE></halt>
+ </LABELS>
+</ASSEMBLER_INFO>

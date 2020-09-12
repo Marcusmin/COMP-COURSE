@@ -1,0 +1,6 @@
+void helloworld(){
+	putStringLn("Hello World");
+}
+int main(){
+	helloworld();
+}

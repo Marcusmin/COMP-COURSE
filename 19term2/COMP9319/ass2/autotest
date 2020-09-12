@@ -1,0 +1,63 @@
+rm -f *.o *.out rlebwt
+
+make 
+
+echo "Total 4 sets of tests."
+echo "Test 1 starts..."
+./rlebwt -m ~cs9319/a2/shopping shoppingidx "in" > test1m.out
+./rlebwt -r ~cs9319/a2/shopping shoppingidx "in" > test1r.out
+./rlebwt -a ~cs9319/a2/shopping shoppingidx "in" > test1a.out
+./rlebwt -n ~cs9319/a2/shopping shoppingidx "75" > test1n.out
+
+echo "Test 2 starts..."
+./rlebwt -m ~cs9319/a2/shopping shoppingidx "in " > test2m.out
+./rlebwt -r ~cs9319/a2/shopping shoppingidx "in " > test2r.out
+./rlebwt -a ~cs9319/a2/shopping shoppingidx "in " > test2a.out
+./rlebwt -n ~cs9319/a2/shopping shoppingidx "81" > test2n.out
+
+echo "Test 3 starts..."
+./rlebwt -m ~cs9319/a2/dblp dblpidx "ata" > test3m.out
+./rlebwt -r ~cs9319/a2/dblp dblpidx "ata" > test3r.out
+./rlebwt -a ~cs9319/a2/dblp dblpidx "ata" > test3a.out
+./rlebwt -n ~cs9319/a2/dblp dblpidx "785846" > test3n.out
+
+echo "Test 4 starts..."
+./rlebwt -a ~cs9319/a2/dblp dblpidx2 " Data " > test4a.out
+./rlebwt -m ~cs9319/a2/dblp dblpidx2 " Data " > test4m.out
+./rlebwt -r ~cs9319/a2/dblp dblpidx2 " Data " > test4r.out
+./rlebwt -n ~cs9319/a2/dblp dblpidx2 "3929" > test4n.out
+
+for ((i=1;i<5;++i))
+do
+  correct=`eval diff -q ~cs9319/a2/test${i}m.out test${i}m.out`
+  echo -ne "test${i} -m: "
+  if [ -z "$correct" ]; then
+    echo  "Passed" 
+  else
+    echo  "Failed" 
+  fi
+  correct=`eval diff -q ~cs9319/a2/test${i}r.out test${i}r.out`
+  echo -ne "test${i} -r: "
+  if [ -z "$correct" ]; then
+    echo  "Passed"
+  else
+    echo  "Failed"
+  fi
+  correct=`eval diff -q ~cs9319/a2/test${i}a.out test${i}a.out`
+  echo -ne "test${i} -a: "
+  if [ -z "$correct" ]; then
+    echo  "Passed"
+  else
+    echo  "Failed"
+  fi
+  correct=`eval diff -q ~cs9319/a2/test${i}n.out test${i}n.out`
+  echo -ne "test${i} -n: "
+  if [ -z "$correct" ]; then
+    echo  "Passed"
+  else
+    echo  "Failed"
+  fi
+
+done
+echo "DONE" 
+

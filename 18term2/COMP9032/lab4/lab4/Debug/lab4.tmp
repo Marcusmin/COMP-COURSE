@@ -1,0 +1,43 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.6</VERSION>
+ <DEVICE>"ATmega2560"</DEVICE>
+ <WORKING_DIR>D:\COMP_COURSE\COMP9032\lab4\lab4\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>D:/Atmel Studio 7\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc</DIR>
+  <DIR>D:\Atmel Studio 7\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\COMP_COURSE\COMP9032\lab4\lab4\task3_1.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>D:/Atmel Studio 7\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc\m2560def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\COMP_COURSE\COMP9032\lab4\lab4\Debug\lab4.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>lab4.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>lab4.map</FILE>
+  <FILE>lab4.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <TempCounter><FILE>D:\COMP_COURSE\COMP9032\lab4\lab4\task3_1.asm</FILE><LINE>72</LINE></TempCounter>
+  <RESET><FILE>D:\COMP_COURSE\COMP9032\lab4\lab4\task3_1.asm</FILE><LINE>93</LINE></RESET>
+  <EXIT0><FILE>D:\COMP_COURSE\COMP9032\lab4\lab4\task3_1.asm</FILE><LINE>131</LINE></EXIT0>
+  <Timer0OVF><FILE>D:\COMP_COURSE\COMP9032\lab4\lab4\task3_1.asm</FILE><LINE>135</LINE></Timer0OVF>
+  <lcd_command><FILE>D:\COMP_COURSE\COMP9032\lab4\lab4\task3_1.asm</FILE><LINE>205</LINE></lcd_command>
+  <lcd_wait><FILE>D:\COMP_COURSE\COMP9032\lab4\lab4\task3_1.asm</FILE><LINE>235</LINE></lcd_wait>
+  <sleep_5ms><FILE>D:\COMP_COURSE\COMP9032\lab4\lab4\task3_1.asm</FILE><LINE>287</LINE></sleep_5ms>
+  <sleep_1ms><FILE>D:\COMP_COURSE\COMP9032\lab4\lab4\task3_1.asm</FILE><LINE>282</LINE></sleep_1ms>
+  <main><FILE>D:\COMP_COURSE\COMP9032\lab4\lab4\task3_1.asm</FILE><LINE>162</LINE></main>
+  <increase_one_roation><FILE>D:\COMP_COURSE\COMP9032\lab4\lab4\task3_1.asm</FILE><LINE>257</LINE></increase_one_roation>
+  <NotSecond><FILE>D:\COMP_COURSE\COMP9032\lab4\lab4\task3_1.asm</FILE><LINE>157</LINE></NotSecond>
+  <new_display><FILE>D:\COMP_COURSE\COMP9032\lab4\lab4\task3_1.asm</FILE><LINE>261</LINE></new_display>
+  <lcd_data><FILE>D:\COMP_COURSE\COMP9032\lab4\lab4\task3_1.asm</FILE><LINE>218</LINE></lcd_data>
+  <loop><FILE>D:\COMP_COURSE\COMP9032\lab4\lab4\task3_1.asm</FILE><LINE>175</LINE></loop>
+  <lcd_wait_loop><FILE>D:\COMP_COURSE\COMP9032\lab4\lab4\task3_1.asm</FILE><LINE>241</LINE></lcd_wait_loop>
+  <sleep_1D2ms><FILE>D:\COMP_COURSE\COMP9032\lab4\lab4\task3_1.asm</FILE><LINE>270</LINE></sleep_1D2ms>
+  <delayloop_1D2ms><FILE>D:\COMP_COURSE\COMP9032\lab4\lab4\task3_1.asm</FILE><LINE>275</LINE></delayloop_1D2ms>
+ </LABELS>
+</ASSEMBLER_INFO>

@@ -1,0 +1,15 @@
+int a[2];
+
+int main() {
+  return 0;
+}
+
+int func() {
+  int arr[] = {1, 2, 3};
+  int num = 2;
+
+  arr[0 + 1] = 8;
+  arr[0 + num] = 9;
+  num = arr[0];
+  return 0;
+}

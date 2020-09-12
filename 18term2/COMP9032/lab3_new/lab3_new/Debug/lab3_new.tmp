@@ -1,0 +1,42 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.6</VERSION>
+ <DEVICE>"ATmega2560"</DEVICE>
+ <WORKING_DIR>D:\COMP_COURSE\COMP9032\lab3_new\lab3_new\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>D:/Atmel Studio 7\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc</DIR>
+  <DIR>D:\Atmel Studio 7\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\COMP_COURSE\COMP9032\lab3_new\lab3_new\task3.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>D:/Atmel Studio 7\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc\m2560def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\COMP_COURSE\COMP9032\lab3_new\lab3_new\Debug\lab3_new.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>lab3_new.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>lab3_new.map</FILE>
+  <FILE>lab3_new.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <RESET><FILE>D:\COMP_COURSE\COMP9032\lab3_new\lab3_new\task3.asm</FILE><LINE>55</LINE></RESET>
+  <EXT_INT0><FILE>D:\COMP_COURSE\COMP9032\lab3_new\lab3_new\task3.asm</FILE><LINE>74</LINE></EXT_INT0>
+  <main><FILE>D:\COMP_COURSE\COMP9032\lab3_new\lab3_new\task3.asm</FILE><LINE>102</LINE></main>
+  <colum_scan><FILE>D:\COMP_COURSE\COMP9032\lab3_new\lab3_new\task3.asm</FILE><LINE>105</LINE></colum_scan>
+  <delay><FILE>D:\COMP_COURSE\COMP9032\lab3_new\lab3_new\task3.asm</FILE><LINE>112</LINE></delay>
+  <next_colum><FILE>D:\COMP_COURSE\COMP9032\lab3_new\lab3_new\task3.asm</FILE><LINE>138</LINE></next_colum>
+  <row_scan><FILE>D:\COMP_COURSE\COMP9032\lab3_new\lab3_new\task3.asm</FILE><LINE>126</LINE></row_scan>
+  <convert><FILE>D:\COMP_COURSE\COMP9032\lab3_new\lab3_new\task3.asm</FILE><LINE>143</LINE></convert>
+  <letters><FILE>D:\COMP_COURSE\COMP9032\lab3_new\lab3_new\task3.asm</FILE><LINE>156</LINE></letters>
+  <symbols><FILE>D:\COMP_COURSE\COMP9032\lab3_new\lab3_new\task3.asm</FILE><LINE>160</LINE></symbols>
+  <convert_end><FILE>D:\COMP_COURSE\COMP9032\lab3_new\lab3_new\task3.asm</FILE><LINE>173</LINE></convert_end>
+  <star><FILE>D:\COMP_COURSE\COMP9032\lab3_new\lab3_new\task3.asm</FILE><LINE>167</LINE></star>
+  <zero><FILE>D:\COMP_COURSE\COMP9032\lab3_new\lab3_new\task3.asm</FILE><LINE>170</LINE></zero>
+  <second_operand><FILE>D:\COMP_COURSE\COMP9032\lab3_new\lab3_new\task3.asm</FILE><LINE>187</LINE></second_operand>
+  <display_result><FILE>D:\COMP_COURSE\COMP9032\lab3_new\lab3_new\task3.asm</FILE><LINE>191</LINE></display_result>
+  <branch><FILE>D:\COMP_COURSE\COMP9032\lab3_new\lab3_new\task3.asm</FILE><LINE>199</LINE></branch>
+ </LABELS>
+</ASSEMBLER_INFO>

@@ -1,0 +1,215 @@
+Trying 131.179.176.147...
+Connected to vision.ucla.edu.
+Escape character is '^]'.
+HTTP/1.1 200 OK
+Date: Fri, 03 Aug 2018 05:30:53 GMT
+Server: Apache/2.2.11 (Ubuntu) PHP/5.3.2-1ubuntu4.29 with Suhosin-Patch
+Last-Modified: Tue, 19 Jun 2018 19:45:58 GMT
+ETag: "290538-1b5e-56f03ee59c980"
+Accept-Ranges: bytes
+Content-Length: 7006
+Content-Type: text/html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type"
+        content="text/html; charset=iso-8859-1" />
+  <meta name="robots"
+        content="all" />
+  <meta name="generator"
+        content="VLWeb.py" />
+  <meta name="generatorversion"
+        content="alpha" />
+
+
+  <title>UCLA Vision Lab</title>
+  
+  <!-- Include VLWeb CSS stylesheet and JavaScript functions -->
+  <link rel="stylesheet"
+        type="text/css"
+        href="styles.css"/>
+
+  <!--[if IE 6]>
+  <link rel="stylesheet" 
+        type="text/css"
+        href="ie.css"/>
+  <![endif]-->
+
+  <script type="text/javascript" src="scripts.js">
+  </script>
+
+
+</head>
+
+<body>
+
+<table id="frame">
+<tr>
+<td id="shadowLeft">&nbsp;</td>
+<td id="container">
+
+<!-- ............................................................. -->
+<div id="headContainer">
+<span id="logo">
+ <span id="ucla">UCLA</span><span id="vision">VISION</span><span id="lab">LAB</span>
+</span>
+<ul id="browse">
+ <li class="current"><a href='index.html'>Home</a></li>
+<li><a href='projects.html'>Projects</a></li>
+<li><a href='people.html'>People</a></li>
+<li><a href='publications.html'>Publications</a></li>
+<li><a href='join.html'>Join</a></li>
+
+</ul>
+</div>
+
+<!-- ............................................................. -->
+<div id="contentContainer">
+<!-- file:        home.html
+     author:      Andrea Vedaldi
+     description: VisionLab WWW Front Page
+  -->
+
+<img alt="cover"
+     src="figures/cover-a.jpg" 
+     id="coverimg" 
+     onMouseOver="coveron()" 
+     onMouseOut="coverout()"
+     />
+
+<div class="infobox">
+<h1>Address</h1>
+<div>UCLA VisionLab</div>
+<!-- <div>Boelter Hall #3811</div> -->
+<div>Engineering VI #386</div>
+<div>University of California, Los Angeles</div>
+<div>405 Hilgard Ave, Los Angeles, 90095, CA, USA</div>
+<div><a href="
+http://maps.google.com/maps?q=UCLA+VisionLab&amp;ll=34.069014,-118.442847&amp;z=18&amp;t=h">
+Google Map</a></div>
+<br/>
+<h1>Contacts</h1>
+<div>Tel. +1 (310) 206 4137</div>
+<div>Director <a href="http://www.cs.ucla.edu/~soatto">Prof. Stefano Soatto</a></div>
+<br/>
+<h1>Go to</h1>
+<ul>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="publications.html">Publications</a></li>
+<li><a href="people.html">People</a></li>
+<!-- <li><a href="meetings.html">Lab Meetings</a></li> -->
+<li><a href="join.html">About joining the Lab</a></li>
+<li><a href="old/">Old page</a></li>
+</ul>
+</div><!-- infobox -->
+
+<div style="clear:both;">&nbsp;</div>
+
+<p><span class="par-title">About the VisionLab.</span>
+Researchers in the Vision Lab investigate how images,
+i.e. measurements of light, can be used to infer properties of the
+physical world such as shape, motion, location and material properties
+of objects within. Such understanding is key to developing engineering
+systems that can &ldquo;see&rdquo; and interact intelligently with the
+world around them. For instance, images captured by
+a <a href="http://www.magazine.ucla.edu/features/no_drivers/">video
+camera mounted on a car</a> can be processed by computers to infer a
+model of its surroundings: Where are other vehicles, pedestrians,
+generic obstacles; how they are moving etc. This in turn can be used
+to navigate the car around obstacles towards its
+destination. Vision-based driver assistant systems are already
+available in the consumer market, and vision technology could help
+reduce significantly the societal cost of 1.5 million fatalities every
+year. Vision can also be used to analyze images captured in the
+<a href="http://vision.ucla.edu/~tko/pubs/censrr2007.pdf">
+environment</a> to understand the effects of climate change by
+monitoring the behavior of animals and plants. Analysis of images of
+the human body can also be used both for diagnostic purposes and for
+planning interventions. These are just few of the applications that
+Vision will enable in the near future. In the meantime, there are
+fundamental mathematical and statistical questions yet unanswered, and
+we are engaged in understanding the fundamentals of visual information
+processing.</p>
+
+<p>The UCLA Vision Lab is part o the School of Engineering at UCLA, and
+has ties with activities in the <a href="http://www.math.ucla.edu/applied/">Mathematics department</a>, the <a href="http://visciences.ucla.edu/">Statistics department</a>, the <a href="http://cms.loni.ucla.edu/CCB/research.aspx">Neuroscience department</a>, and outside UCLA with
+research groups at <a href="http://www.vision.caltech.edu/wikis/MURI05/">Caltech/Berkeley/MIT</a>, at
+<a href="http://controls.ae.gatech.edu/avcs/">Georgia Tech/MIT</a> and
+at <a href="http://cherokee.stanford.edu/%7Emuri/">Stanford/Berkeley</a>.
+</p>
+
+<p>
+Our research is made possible by the generous support of AFOSR, NSF, ONR and the Keck Foundation.
+</p>
+
+<span class="par-title">Links.</span>
+<ul class="links">
+ <li>
+  <a href="http://www.golemgroup.com">DARPA Grand Challenge Team</a>
+ </li>
+ <li>
+  <a href="http://www.loni.ucla.edu/CCB/">CCB: Center for Computational Biology</a>, a NIH 
+  <a href="http://www.bisti.nih.gov/ncbc/">National Center for Biomedical Computing</a>
+ </li>
+ <li>
+  <a href="">CoMotion: Stanford/Berkeley/UCLA MURI on Computational Methods for Collaborative Motions</a>
+ </li>
+ <li>
+  <a href="http://controls.ae.gatech.edu/avcs/">Georgia Tech/MIT/UCLA MURI on Active Vision Control Systems</a>
+ </li>
+ <li>
+  <a href="http://www.cs.cmu.edu/%7Ecil/vision.html">Computer Vision Homepage</a>
+ </li>
+ <li> 
+  <a href="http://www.cs.cmu.edu/%7Ecil/v-groups.html">Computer Vision Groups</a>
+ </li>
+ <li>
+  <a href="http://www.cens.ucla.edu/">CENS: Center for Embedded Networked Sensing</a>
+ </li>
+ <li>
+  <a href="http://lecs.cs.ucla.edu/GALORE/">GALORE: Globally Ad-hoc, Locally Regular embedded sensor systems</a>
+ </li>
+ <li>
+  <a href="http://www.dai.ed.ac.uk/CVonline/">CVonline (free WWW-based compendium of introductions to topics in computer vision)</a>
+ </li>
+</ul>
+
+</div>
+
+<!-- ............................................................. -->
+<div id="footerContainer">
+<div class="validator">
+ <a href="http://validator.w3.org/check?uri=referer">
+  <img src="http://www.w3.org/Icons/valid-xhtml10-blue"
+       alt="Valid XHTML 1.0 Strict"
+       height="31"
+       width="88" />
+ </a>
+</div>
+Copyright (c) 2007 UCLA VisionLab
+</div>
+
+</td>
+<td id="shadowRight">&nbsp;</td>
+</tr>
+</table>
+
+
+  <!-- Google Analytics -->
+  <script type="text/javascript" src="gatag.js"></script>
+  <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl."
+      : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost +
+      "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+      var pageTracker = _gat._getTracker("UA-4936091-1");
+      pageTracker._initData();
+      pageTracker._trackPageview();
+  </script>
+
+</body>
+</html>

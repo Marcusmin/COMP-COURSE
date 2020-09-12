@@ -1,0 +1,5 @@
+category	text
+spam	Chinese Beijing Chinese
+spam	Chinese Chinese Shanghai
+spam	Chinese Macao
+ham	Tokyo Japan Chinese

@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "unistd.h": "c",
+        "getopt.h": "c",
+        "inet.h": "c",
+        "sm.h": "c",
+        "smc.h": "c",
+        "resource.h": "c"
+    },
+    "C_Cpp.default.cStandard": "c99"
+}

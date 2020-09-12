@@ -1,0 +1,9 @@
+
+AVRASM ver. 2.2.6  D:\COMP_COURSE\COMP9032\lab03\task1.asm Wed Sep 05 20:13:38 2018
+
+[builtin](2): error: Cannot find include file: m2560def.inc
+D:\COMP_COURSE\COMP9032\lab03\task1.asm(0): '[builtin]' included form here
+D:\COMP_COURSE\COMP9032\lab03\task1.asm(10): error: Cannot find include file: m2560def.inc
+D:\COMP_COURSE\COMP9032\lab03\task1.asm(42): error: DELAY: Unknown instruction or macro
+D:\COMP_COURSE\COMP9032\lab03\task1.asm(47): error: DELAY: Unknown instruction or macro
+D:\COMP_COURSE\COMP9032\lab03\task1.asm(52): error: DELAY: Unknown instruction or macro

@@ -1,0 +1,25 @@
+boolean Iamtrue(){
+	return true;
+}
+boolean Iamfalse(){
+	putStringLn("Noooooooooh");
+	return false;
+}
+int main(){
+	int j = 0;
+	int i;
+	for (i = 0; i < 10; i = i+ 1){
+		j = j + 1;
+		putStringLn("Hello World");
+	}
+	if (true ||  Iamfalse()) {
+		putStringLn("False");
+	} else {
+		putStringLn("True");
+	}
+	if (false && Iamfalse()) {
+		putStringLn("Hi");
+	}else {
+		putStringLn("Hello");
+	}
+}

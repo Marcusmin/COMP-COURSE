@@ -1,0 +1,14 @@
+
+ 1  gigabitethernet3-3.exi2.melbourne.telstra.net (203.50.77.53)  0.288 ms  0.202 ms  0.242 ms
+ 2  bundle-ether3-100.win-core10.melbourne.telstra.net (203.50.80.129)  1.865 ms  1.354 ms  2.117 ms
+ 3  bundle-ether12.ken-core10.sydney.telstra.net (203.50.11.122)  12.733 ms  12.231 ms  12.872 ms
+ 4  bundle-ether1.ken-edge901.sydney.telstra.net (203.50.11.95)  11.969 ms  11.980 ms  11.955 ms
+ 5  aarnet6.lnk.telstra.net (139.130.0.78)  11.614 ms  11.592 ms  11.610 ms
+ 6  ge-6-0-0.bb1.a.syd.aarnet.net.au (202.158.202.17)  11.734 ms  11.849 ms  11.735 ms
+ 7  ae9.pe2.brwy.nsw.aarnet.net.au (113.197.15.56)  12.109 ms  12.097 ms  11.988 ms
+ 8  et-3-1-0.pe1.brwy.nsw.aarnet.net.au (113.197.15.146)  12.360 ms  12.345 ms  12.359 ms
+ 9  138.44.5.1 (138.44.5.1)  21.729 ms  12.601 ms  12.609 ms
+10  libcr1-te-1-5.gw.unsw.edu.au (149.171.255.102)  12.610 ms  12.600 ms  12.608 ms
+11  ombudnex1-po-1.gw.unsw.edu.au (149.171.255.202)  13.109 ms  13.349 ms  13.109 ms
+12  ufw1-ae-1-3154.gw.unsw.edu.au (149.171.253.36)  13.235 ms  13.224 ms  13.233 ms
+13  129.94.39.23 (129.94.39.23)  13.358 ms  13.474 ms  13.360 ms

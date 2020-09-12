@@ -1,0 +1,70 @@
+1. Algorithm and Protocol of two phase commit
+
+    1. First phase(Voting phase)
+        ## Root node in network
+        Controller send {control, From, Pid, SeqNum, ControlFun} message to root process
+        ->
+        If SeqNum has already handled, root process will discard it, otherwise,
+            it records the sequence number of this {control, From, Pid, SeqNum, ControlFun}
+        ->
+        Root process forwards {control, From, Pid, SeqNum, ControlFun} to router in router table
+        ->
+        Root process make a copy of current table
+        ->
+        Root process implements "ControlFun"
+        ->
+        Root process waits the reply from other node for 5 seconds
+        ->
+        Root process decide to abort if 5 seconds go or one of the reply is {abort, SeqNum};
+        ## For common router in graph
+        If SeqNum has already handled, non-root process will discard it, otherwise,
+            it records the sequence number of this {control, From, Pid, SeqNum, ControlFun}
+        ->
+        Non-root process forward this control message to other nodes
+        ->
+        Non-root process make a copy of current table
+        ->
+        Non-root process implement "ControlFun"
+        ->
+        Non-root process send reply to root process, with opposed direction, with the help from a table in which store
+        a {SeqNum, Pid} and Pid is from which the control message comes.
+        ->
+        Non-root process will enter a uncertain state waiting for decision made by root process, but still can
+            forward reply.
+
+    2. Second phase(Completion phase)
+        Root process receive n-1 reply from nodes in graph (minus 1 causes exclude itself).
+            We believe that the number of replies is as same as the number of control because the {SeqNum, Pid} is stored
+            in a set and each control only implemented once.
+        if all replies are {yes, SeqNum}, make "commit" decision and send {'docommit', self, SeqNum} to all non-root node
+        if one of the replies is {abort, SeqNum}, send {doabort, self, SeqNum} to all non-root node
+        ->
+        If Root commit the request, it would abort the copy of current table
+        otherwise, it would abort the current table and fill it with previous copy
+        ->
+        Root process waiting for new coming message
+
+2. Extra messages
+    1. reply of control
+    {yes, SeqNum}, indicating that this node voting for commit the request whose sequence number is SeqNum
+    {abort, SeqNum}, indicating that this node voting for abort the request  whose sequence number is SeqNum
+
+    2. decision of control
+    {'docommit', From, SeqNum}, make all workers commit the request
+    {'doabort', From, SeqNum}, make all workers abort the request
+
+3. Handle fault cases and conflicting control requests
+    1. Handle simultaneous request: abort both control request. If more than one node receive control request,
+        all nodes will be trapped in waiting loops, with 5 second timeout. Therefore, none of nodes can reply.
+        As a result, they will abort the control request after delay.
+        The issue caused by this approach is that aborted control message will stay at mailbox even if the root
+        node had decided to abort it. Nodes still vote and abort, but their replies to root node would become a
+        garbage.
+        To deal with expired message, every time 2pc finished, node would consume all replies with handled
+        sequence number.
+
+    2. Control message with duplicated sequence number would not be handled because the sequence number would
+        be stored in a set.
+
+    3. Every time after finished a transaction, clean the mailbox with particular sequence number
+

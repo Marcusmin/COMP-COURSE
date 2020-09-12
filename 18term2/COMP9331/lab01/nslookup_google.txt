@@ -1,0 +1,7 @@
+Server:		129.94.208.2
+Address:	129.94.208.2#53
+
+Non-authoritative answer:
+Name:	www.google.com
+Address: 216.58.203.100
+

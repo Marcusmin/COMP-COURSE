@@ -1,0 +1,400 @@
+TEST 1 BEGIN
+$ echo 0 0 0 | python3 quiz_1.py
+Enter three nonnegative integers: 0 0 0
+
+The generated list L is:
+   []
+
+The elements to keep in L_1 and L_2 are:
+   []
+
+Here is L_1:
+   []
+
+Here is L_2:
+   []
+
+Here is L_3:
+   []
+TEST 1 END
+
+TEST 2 BEGIN
+$ echo 0 0 1 | python3 quiz_1.py
+Enter three nonnegative integers: 0 0 1
+
+The generated list L is:
+   [0]
+
+The elements to keep in L_1 and L_2 are:
+   [0]
+
+Here is L_1:
+   [0]
+
+Here is L_2:
+   [0]
+
+Here is L_3:
+   [0]
+TEST 2 END
+
+TEST 3 BEGIN
+$ echo 0 0 2 | python3 quiz_1.py
+Enter three nonnegative integers: 0 0 2
+
+The generated list L is:
+   [0, 0]
+
+The elements to keep in L_1 and L_2 are:
+   [0]
+
+Here is L_1:
+   [0, 0]
+
+Here is L_2:
+   [0]
+
+Here is L_3:
+   [0, 0]
+TEST 3 END
+
+TEST 4 BEGIN
+$ echo 10 1 2 | python3 quiz_1.py
+Enter three nonnegative integers: 10 1 2
+
+The generated list L is:
+   [0, 1]
+
+The elements to keep in L_1 and L_2 are:
+   [0]
+
+Here is L_1:
+   [0]
+
+Here is L_2:
+   [0]
+
+Here is L_3:
+   [0, 1]
+TEST 4 END
+
+TEST 5 BEGIN
+$ echo 10 6 2 | python3 quiz_1.py
+Enter three nonnegative integers: 10 6 2
+
+The generated list L is:
+   [4, 0]
+
+The elements to keep in L_1 and L_2 are:
+   [0]
+
+Here is L_1:
+   [0]
+
+Here is L_2:
+   [0]
+
+Here is L_3:
+   [4]
+TEST 5 END
+
+TEST 6 BEGIN
+$ echo 0 0 3 | python3 quiz_1.py
+Enter three nonnegative integers: 0 0 3
+
+The generated list L is:
+   [0, 0, 0]
+
+The elements to keep in L_1 and L_2 are:
+   [0]
+
+Here is L_1:
+   [0, 0, 0]
+
+Here is L_2:
+   [0]
+
+Here is L_3:
+   [0, 0, 0]
+TEST 6 END
+
+TEST 7 BEGIN
+$ echo 356 10 3 | python3 quiz_1.py
+Enter three nonnegative integers: 356 10 3
+
+The generated list L is:
+   [10, 0, 7]
+
+The elements to keep in L_1 and L_2 are:
+   [0, 10]
+
+Here is L_1:
+   [10, 0]
+
+Here is L_2:
+   [10, 0]
+
+Here is L_3:
+   [10]
+TEST 7 END
+
+TEST 8 BEGIN
+$ echo 356 4 3 | python3 quiz_1.py
+Enter three nonnegative integers: 356 4 3
+
+The generated list L is:
+   [0, 3, 2]
+
+The elements to keep in L_1 and L_2 are:
+   [0, 3]
+
+Here is L_1:
+   [0, 3]
+
+Here is L_2:
+   [0, 3]
+
+Here is L_3:
+   [3, 2]
+TEST 8 END
+
+TEST 9 BEGIN
+$ echo 357 2 5 | python3 quiz_1.py
+Enter three nonnegative integers: 357 2 5
+
+The generated list L is:
+   [0, 1, 2, 0, 0]
+
+The elements to keep in L_1 and L_2 are:
+   [0, 2]
+
+Here is L_1:
+   [0, 2, 0, 0]
+
+Here is L_2:
+   [0, 2]
+
+Here is L_3:
+   [0, 1, 2, 0, 0]
+TEST 9 END
+
+TEST 10 BEGIN
+$ echo 357 12 5 | python3 quiz_1.py
+Enter three nonnegative integers: 357 12 5
+
+The generated list L is:
+   [2, 5, 11, 1, 2]
+
+The elements to keep in L_1 and L_2 are:
+   [1, 5]
+
+Here is L_1:
+   [5, 1]
+
+Here is L_2:
+   [5, 1]
+
+Here is L_3:
+   [1, 2]
+TEST 10 END
+
+TEST 11 BEGIN
+$ echo 358 5 8 | python3 quiz_1.py
+Enter three nonnegative integers: 358 5 8
+
+The generated list L is:
+   [1, 1, 3, 5, 2, 1, 0, 0]
+
+The elements to keep in L_1 and L_2 are:
+   [0, 2, 5]
+
+Here is L_1:
+   [5, 2, 0, 0]
+
+Here is L_2:
+   [5, 2, 0]
+
+Here is L_3:
+   [2, 1, 0, 0]
+TEST 11 END
+
+TEST 12 BEGIN
+$ echo 359 5 9 | python3 quiz_1.py
+Enter three nonnegative integers: 359 5 9
+
+The generated list L is:
+   [0, 4, 3, 4, 3, 4, 2, 3, 0]
+
+The elements to keep in L_1 and L_2 are:
+   [0, 3]
+
+Here is L_1:
+   [0, 3, 3, 3, 0]
+
+Here is L_2:
+   [0, 3]
+
+Here is L_3:
+   [4, 3, 4, 3, 4, 2, 3]
+TEST 12 END
+
+TEST 13 BEGIN
+$ echo 360 5 12 | python3 quiz_1.py
+Enter three nonnegative integers: 360 5 12
+
+The generated list L is:
+   [1, 2, 1, 5, 0, 1, 5, 1, 4, 1, 0, 1]
+
+The elements to keep in L_1 and L_2 are:
+   [0, 2, 5]
+
+Here is L_1:
+   [2, 5, 0, 5, 0]
+
+Here is L_2:
+   [2, 5, 0]
+
+Here is L_3:
+   [1, 2, 1]
+TEST 13 END
+
+TEST 14 BEGIN
+$ echo 361 15 15 | python3 quiz_1.py
+Enter three nonnegative integers: 361 15 15
+
+The generated list L is:
+   [4, 12, 12, 14, 0, 13, 4, 5, 11, 12, 9, 13, 0, 14, 2]
+
+The elements to keep in L_1 and L_2 are:
+   [0, 4, 9, 12, 14]
+
+Here is L_1:
+   [4, 12, 12, 14, 0, 4, 12, 9, 0, 14]
+
+Here is L_2:
+   [4, 12, 14, 0, 9]
+
+Here is L_3:
+   [12, 12]
+TEST 14 END
+
+TEST 15 BEGIN
+$ echo 362 12 20 | python3 quiz_1.py
+Enter three nonnegative integers: 362 12 20
+
+The generated list L is:
+   [12, 8, 8, 9, 5, 3, 8, 10, 5, 9, 8, 10, 10, 11, 12, 4, 5, 4, 7, 5]
+
+The elements to keep in L_1 and L_2 are:
+   [3, 5, 8, 10, 12]
+
+Here is L_1:
+   [12, 8, 8, 5, 3, 8, 10, 5, 8, 10, 10, 12, 5, 5]
+
+Here is L_2:
+   [12, 8, 5, 3, 10]
+
+Here is L_3:
+   [9, 8, 10, 10, 11, 12]
+TEST 15 END
+
+TEST 16 BEGIN
+$ echo 364 10 25 | python3 quiz_1.py
+Enter three nonnegative integers: 364 10 25
+
+The generated list L is:
+   [0, 1, 7, 0, 0, 2, 5, 3, 2, 8, 10, 10, 3, 2, 0, 4, 2, 1, 2, 0, 3, 6, 7, 8, 5]
+
+The elements to keep in L_1 and L_2 are:
+   [0, 2, 4, 6, 8]
+
+Here is L_1:
+   [0, 0, 0, 2, 2, 8, 2, 0, 4, 2, 2, 0, 6, 8]
+
+Here is L_2:
+   [0, 2, 8, 4, 6]
+
+Here is L_3:
+   [3, 2, 0, 4, 2, 1, 2, 0, 3, 6, 7, 8, 5]
+TEST 16 END
+
+TEST 17 BEGIN
+$ echo 372 11 30 | python3 quiz_1.py
+Enter three nonnegative integers: 372 11 30
+
+The generated list L is:
+   [1, 11, 11, 5, 3, 1, 8, 3, 11, 7, 6, 9, 8, 11, 3, 6, 2, 9, 4, 3, 5, 0, 2, 8, 4, 4, 11, 3, 6, 2]
+
+The elements to keep in L_1 and L_2 are:
+   [0, 2, 4, 6, 8, 11]
+
+Here is L_1:
+   [11, 11, 8, 11, 6, 8, 11, 6, 2, 4, 0, 2, 8, 4, 4, 11, 6, 2]
+
+Here is L_2:
+   [11, 8, 6, 2, 4, 0]
+
+Here is L_3:
+   [7, 6, 9, 8]
+TEST 17 END
+
+TEST 18 BEGIN
+$ echo 382 16 40 | python3 quiz_1.py
+Enter three nonnegative integers: 382 16 40
+
+The generated list L is:
+   [1, 8, 4, 10, 7, 16, 1, 10, 15, 5, 10, 10, 1, 14, 6, 5, 13, 11, 5, 10, 6, 7, 4, 4, 5, 13, 10, 13, 8, 1, 11, 16, 16, 2, 11, 1, 11, 3, 12, 0]
+
+The elements to keep in L_1 and L_2 are:
+   [0, 2, 4, 6, 8, 11, 13, 15]
+
+Here is L_1:
+   [8, 4, 15, 6, 13, 11, 6, 4, 4, 13, 13, 8, 11, 2, 11, 11, 0]
+
+Here is L_2:
+   [8, 4, 15, 6, 13, 11, 2, 0]
+
+Here is L_3:
+   [6, 7, 4, 4, 5]
+TEST 18 END
+
+TEST 19 BEGIN
+$ echo 388 20 50 | python3 quiz_1.py
+Enter three nonnegative integers: 388 20 50
+
+The generated list L is:
+   [11, 11, 11, 5, 2, 14, 7, 6, 11, 7, 13, 6, 20, 20, 2, 2, 6, 4, 9, 16, 9, 2, 8, 10, 11, 12, 0, 10, 2, 7, 0, 4, 8, 7, 11, 3, 1, 8, 11, 17, 14, 19, 15, 0, 6, 17, 19, 9, 0, 3]
+
+The elements to keep in L_1 and L_2 are:
+   [0, 2, 4, 6, 8, 10, 12, 14, 16, 19]
+
+Here is L_1:
+   [2, 14, 6, 6, 2, 2, 6, 4, 16, 2, 8, 10, 12, 0, 10, 2, 0, 4, 8, 8, 14, 19, 0, 6, 19, 0]
+
+Here is L_2:
+   [2, 14, 6, 4, 16, 8, 10, 12, 0, 19]
+
+Here is L_3:
+   [11, 11, 11]
+TEST 19 END
+
+TEST 20 BEGIN
+$ echo 400 20 100 | python3 quiz_1.py
+Enter three nonnegative integers: 400 20 100
+
+The generated list L is:
+   [9, 17, 8, 2, 18, 15, 14, 13, 13, 17, 8, 9, 14, 6, 13, 4, 1, 7, 19, 0, 12, 9, 19, 7, 13, 7, 3, 3, 2, 10, 2, 19, 2, 13, 18, 17, 20, 0, 1, 1, 3, 7, 4, 17, 10, 2, 19, 9, 10, 12, 15, 0, 7, 3, 13, 9, 12, 8, 20, 15, 5, 9, 17, 10, 19, 9, 7, 8, 4, 9, 19, 0, 2, 2, 2, 6, 8, 17, 12, 19, 16, 15, 3, 12, 14, 20, 10, 13, 17, 11, 18, 14, 0, 17, 4, 9, 19, 15, 20, 12]
+
+The elements to keep in L_1 and L_2 are:
+   [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+
+Here is L_1:
+   [8, 2, 18, 14, 8, 14, 6, 4, 0, 12, 2, 10, 2, 2, 18, 20, 0, 4, 10, 2, 10, 12, 0, 12, 8, 20, 10, 8, 4, 0, 2, 2, 2, 6, 8, 12, 16, 12, 14, 20, 10, 18, 14, 0, 4, 20, 12]
+
+Here is L_2:
+   [8, 2, 18, 14, 6, 4, 0, 12, 10, 20, 16]
+
+Here is L_3:
+   [9, 17, 8, 2, 18, 15, 14, 13, 13, 17, 8, 9, 14, 6, 13, 4, 1, 7, 19, 0, 12, 9, 19, 7, 13, 7, 3, 3, 2, 10, 2, 19, 2, 13, 18, 17, 20, 0, 1, 1, 3, 7, 4, 17, 10, 2, 19, 9, 10, 12, 15, 0, 7, 3, 13, 9, 12, 8, 20, 15, 5, 9, 17, 10, 19, 9, 7, 8, 4, 9, 19, 0, 2, 2, 2, 6, 8, 17, 12, 19, 16, 15, 3, 12, 14, 20, 10, 13, 17, 11, 18, 14, 0, 17, 4, 9, 19, 15, 20, 12]
+TEST 20 END
+

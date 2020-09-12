@@ -1,0 +1,6 @@
+Date	   Start	   Stop	   Activity	         Comments
+09/09/18	16:00    17:00	   watching video	   got familiar with the common git operation
+15/09/18 13:00    17:00    coding            code subset 0 according to autotest
+16/09/18 15:00    18:00    coding            coding subset 1's first segment
+21/09/18 12:50    14:00     add comments		add comment to make code more readable for myself
+23/09/18	15:00		17:00		coding 				work on subset1_13 and subset1_14

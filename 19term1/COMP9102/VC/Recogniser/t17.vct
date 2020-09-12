@@ -1,0 +1,20 @@
+Program
+  DeclList
+    FuncDecl
+      int
+      A
+      EmptyParaList
+      CompoundStmt
+        EmptyDeclList
+        StmtList
+          ExprStmt
+            AssignExpr
+              ArrayExpr
+                SimpleVar
+                  a
+                IntExpr
+                  1
+              IntExpr
+                1
+          EmptyStmtList
+    EmptyDeclList

@@ -1,0 +1,168 @@
+
+/* base styles, feel free to edit */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    height: 100%;
+    font-family: -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:white;
+    min-height: 60px;
+    border-bottom: 1px solid rgba(0,0,0,.0975);
+}
+
+footer {
+    border-top: 1px solid rgba(0,0,0,.0975);
+    padding: 10px;
+    background-color:white;
+    min-height: 60px;
+    text-align: right;
+}
+
+.banner > *, footer > * {
+    margin: 10px 25px;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-item {
+    /* border: 1px solid rgba(0, 0, 0, 0.1); */
+    margin: auto;
+    padding: 5px;
+    display: inline;
+    list-style-type: none;
+    /* float: left; */
+}
+
+.post {
+    max-width: 640px;
+    overflow: hidden;
+    margin: 30px auto;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,.0975);
+}
+/* .meta-container {
+    -moz-box-align: left;
+    width: 300px;
+    height: 300px;
+    float: right;
+} */
+.post-title {
+    padding: 10px 20px;
+    text-align:right;
+    margin: 0;
+    border-bottom: 1px solid rgba(0,0,0,.0975);
+}
+
+.post-thumb {
+    margin: 0;
+    padding: 3px;
+    width: 150px;
+    height: 150px;
+    border: 2px solid snow;
+}
+
+/* .post-image {
+    width: 320px;
+    height: 320px;
+    float: left;
+} */
+
+@media screen and (max-width: 500px) {
+    .post {
+        border: none;
+        border-bottom: 1px solid rgba(0,0,0,.0975);
+        border-top: 1px solid rgba(0,0,0,.0975); 
+        max-height: 60vh;
+    }
+
+    .post-image {
+        max-width: 100%;
+        max-height: 60vh;
+    }
+
+    #feed > * {
+        flex: 1 1 45%;
+        height: auto;
+    }
+}
+
+/* Add your styles here */
+.button-with-image {
+    padding:0;
+    margin:0;
+    vertical-align:top;
+    font-size:0;
+}
+.image-in-button {
+    width: 180px;
+    height: 270px;
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+.icon-container {
+    display:block;
+    margin-top: 2%;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.post-discription{
+    display: block;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%; 
+}
+.post-time{
+    float: right;
+    z-index: -100;
+}
+.post-image{
+    width: 100%;
+    height: 100%;
+}
+.who-likes-button{
+    display: block;
+}
+.post-discription {
+    font: 1em sans-serif;
+    font-weight: bold;
+}
+#inputComment{
+    margin-top: 1%;
+}

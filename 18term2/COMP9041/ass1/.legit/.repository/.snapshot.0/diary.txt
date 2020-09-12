@@ -1,0 +1,2 @@
+Date	   Start	   Stop	   Activity	         Comments
+09/09/18	16:00    17:00	   watching video	   got familiar with the common git operation

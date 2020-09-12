@@ -1,0 +1,9 @@
+PING www.cse.unsw.edu.au (129.94.242.51) 56(84) bytes of data.
+64 bytes from albeniz.orchestra.cse.unsw.EDU.AU (129.94.242.51): icmp_req=1 ttl=63 time=0.354 ms
+64 bytes from albeniz.orchestra.cse.unsw.EDU.AU (129.94.242.51): icmp_req=2 ttl=63 time=0.437 ms
+64 bytes from albeniz.orchestra.cse.unsw.EDU.AU (129.94.242.51): icmp_req=3 ttl=63 time=0.279 ms
+64 bytes from albeniz.orchestra.cse.unsw.EDU.AU (129.94.242.51): icmp_req=4 ttl=63 time=0.347 ms
+
+--- www.cse.unsw.edu.au ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3043ms
+rtt min/avg/max/mdev = 0.279/0.354/0.437/0.057 ms

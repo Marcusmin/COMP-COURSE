@@ -1,0 +1,103 @@
+## Files And Functions:
+1. sm.h
+2. sm.c
+
+    1. sm_node_init()
+    Describle:
+        dsm pass 4 internal arguments to remote process, store them and remove them from char*argv[].
+        set up a tcp socket with dsm, assign it to a global static varibale. If creating socket not success, the process will exit.
+        #### Milstone2 Update
+        1. Use mmap to pre-allocate a block of virtual memory whose size is 65536*4096 bytes. On each node, the starting address of this block is fixed, 
+           which is 0x26698000.
+        1. Two asynchronized socket set up for handling write and read fault.
+    Shortcomings:
+        1. The way of choosing the starting address of shared memory is not flexible. I used mmap to allocate the specific memory blocks on cse machine many time
+           for choosing a safe address, which means it might be only safe on cse machine, or worse, only safe when I was testing them.
+        2. There are 3 sockets I used in dsm system, and connection establishing is time-consuming.
+
+    2. sm_node_exit()
+    Describle:
+        Process serialize a integer(1) to an string.
+        Process send this fix-length string indicating an exit singal.
+        #### Milstone2 Update
+        1. In sm_node_exit(), there is a extra sm_barrier() called for synchronized nodes.
+
+    3. sm_barrier()
+        Describle:
+            Send integer to dsm allocator for indicating this node has entered barrier region, use recv() to block the process.
+            recv() may not block if disconnection occurred, it will exit immediately.
+            #### Milstone2 Update
+            The sigpoll and sigsegv signals will interrupt recv() and make it return -1.
+            So check the return value looply to make sure the dms message received properly.
+        Shortcomings && Bugs:
+            1. If a node is disconnected with dsm, this case would be detected by recv() get 0 byte
+               the dsm will not continue to wait for other process, instead, it exit immediately. But other
+               remote process only can notice that when they call sm_* functions.
+            2. To prevent signals interruptting the function, I use loop to make sure the recv() can get expected message.
+               However, if recv() encounters another error, it would be trapped in an infinite loop.
+        
+    4. sm_malloc()
+        Describle:
+            Send an integer to allocator, request the ownership of particular number of pages.
+
+    5. sm_bcast(void **addr, int nid)
+        Describle:
+            For node whose nid is matched, send extra message to indicate which value it wants to broadcast.
+            At the same time, other nodes are waiting for a response from dsm.
+    6. SIGPOLL handler:
+        check which socket triggerred
+        -> if SIGPOLL of write -> change protection of the page
+        -> if SIGPOLL of read -> collect the page and send to dsm
+    7. SIGSEGV handler
+        check the number of times this page triggerred signal
+        -> if 2 -> write fault
+        -> if 1 -> read fault
+
+3. dsm.c
+    Describle:
+        The only useful function in this file is main().
+        It use getopt() to collect arguments.
+        When dsm is communicating with node, it can tolerent 3s latency.
+        1. Handle Read
+            receive READ from node A ->  send ACK to node A -> receive Page address from node A
+            -> find owner B of the page -> send SIGPOLL to owner B -> receive page content from owner B
+            -> send page content to node A -> receive ACK from node A
+        2. Handle Write
+            receive WRITE from node A -> send ACK to node A -> receive page address from node A
+            -> change ownership of page-> allocate the page from previous owner 
+            -> send page to node A -> send invalidate to other nodes
+        3. Handle Bcast
+            receive BCAST from node A -> counter increase -> check the counter value with the number of nodes
+            -> if same -> send message to all nodes
+            -> if not same -> do nothing
+        4. Handle Malloc:
+            receive MALLOC from node A -> send ACK to node A -> receive the number of page node request
+            -> change ownership of page -> send ACK to node A.
+    Shortcomings:
+        1. if -H or -l [files] presented and the files not exist, the dsm would fail.
+
+## Overview:
+
+After start dsm, read the arguments, store the arguments in a structure.
+
+Before start a remote process, dsm create a tcp socket.
+Then fork a number of ssh child process.
+Use ssh to start a remote process. Internally passing four arguments to it.
+(1). IP of dsm 
+(2). Port number where dsm's tcp socket is listening 
+(3). The number of remote process started by dsm 
+(4). NID assigned by dsm
+
+If one of the ssh is fail, then dsm program will exit with -1
+dsm program will block and waiting incoming remote process's connection.
+
+When remote process start, it will call sm_node_init function, client will connect to server.
+
+## Known Bugs:
+Below bugs are found during doing my own test.
+    1. Deadlocks. It would happen when a node is waiting for recv from dms but dsm is also
+       waiting for a node whose process is suspended because specific signal is blocked. When I 
+       was running 'matmul' and 'share', there is no problem, but it will occur.
+## Shortcoming:
+    1. Slow. It cost many seconds to fork a ssh child process, and tcp connection is also very expensive
+       For matmul test file, it would consume even 50s to finish.
